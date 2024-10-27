@@ -1,6 +1,8 @@
 import multiprocessing
 import time
 
+# ------------Многопроцессный--------------
+
 def read_info(name):
     all_data = []
     with open(name, 'r') as file:
@@ -23,9 +25,7 @@ if __name__ == '__main__':
     end_time = time.time()
     print(f'{end_time - start_time:.6f} (многопроцессный)')
 
-
-
-import time
+# -------------Линейный-------------
 
 def read_info(name):
     all_data = []
